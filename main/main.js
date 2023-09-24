@@ -52,7 +52,7 @@ function masCard(){
 	const cards = document.querySelectorAll('.card_food');
 		btns.forEach((button)=>{
 			button.addEventListener('click', (e)=>{
-				console.log('click')
+				
 				let cardSelect = e.currentTarget.parentElement.parentElement
 				cards.forEach((card)=>{
 					if(card !== cardSelect){

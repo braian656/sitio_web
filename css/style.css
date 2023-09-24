@@ -131,14 +131,15 @@ body {
 	height: 3.5rem;
 	display: flex;
 	margin: 0 5rem;
+	background-color: var(--color-principal);
+	border-radius: 0.313rem;
+	border: 2px solid var(--color-secundario);
 }
 .box_info .circle_icon{
 	padding: 1.125rem;
-	border-radius: 50%;
 	margin-right: var(--med-1);
 	background-color: var(--color-principal);
 	display: grid;
-	border: 2px solid var(--color-secundario);
 	place-content: center;
 	transition: 0.5s ease-in-out;
 }
@@ -147,29 +148,25 @@ body {
 	font-size: 1.125rem;
 	color: var(--color-secundario);
 }
+
 .box_info .info{
-	background-color: var(--color-principal);
-	width: 12.5rem;
-	border-radius: 0.313rem;
+	width: 9.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
 }
-.box_info .circle_icon:hover{
-	border: 0.125rem solid var(--color-secundario);
 
-}
 .info{
 	font-family: var(--font-item);
 	color: var(--color-3);
 }
 .info h2{
 	letter-spacing: 0.125rem;
-	font-size: 0.75rem;
+	font-size: 0.7rem;
 }
 .info p{
-	font-size: 0.75rem;
+	font-size: 1rem;
 }
 .section_two {
 	background-color: var(--color-secundario);
@@ -347,7 +344,7 @@ body {
 }
 footer {
 	background-color: var(--color-principal);
-	height: 20rem;
+	height: 14rem;
 }
 
 footer .restaurant_logo {
@@ -583,6 +580,9 @@ footer .restaurant_logo .img_logo {
 
 
 @media (max-width: 380px) {
+	.image .name_rest{
+		font-size: 2.25rem;
+	}
 	.section_three .gallery {
 		margin: 0;
 	}
@@ -596,3 +596,15 @@ footer .restaurant_logo .img_logo {
 
 
 
+@media (max-width: 320px) {
+	.card_food .info_food{
+		width: 8.125rem;
+	}
+	.card_food .img_food{
+		width: 11.125rem;
+	}
+	.info_food p{
+		text-align: center;
+		margin-top: 1rem;
+	}
+}
